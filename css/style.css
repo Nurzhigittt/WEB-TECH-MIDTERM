@@ -1,4 +1,4 @@
-/* Midterm requirement: CSS variables. This is an agreed addition to the slides. */
+
 :root {
     --page-background: #111318;
     --text-color: #f5f5f2;
@@ -6,7 +6,6 @@
     --muted-color: #aeb4bf;
 }
 
-/* Week 2: external CSS, basic selectors, text formatting and box model. */
 * {
     box-sizing: border-box;
 }
@@ -51,7 +50,6 @@ p {
     color: var(--muted-color);
 }
 
-/* Week 3: Flexbox for the header, navigation and small groups of links. */
 .site-header {
     border-bottom: 1px solid #30343e;
 }
@@ -161,7 +159,6 @@ main {
     font-size: 0.875rem;
 }
 
-/* Week 2: relative parent and absolute label. */
 .featured-poster {
     position: relative;
     max-width: 310px;
@@ -215,7 +212,7 @@ main {
     margin: 0;
 }
 
-/* Week 3: Grid makes three equal columns. */
+
 .collection-grid, .movie-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -311,7 +308,7 @@ main {
     padding-top: 15px;
 }
 
-/* Midterm requirement: a pseudo-class styles every second table row. */
+
 .ratings-table tbody tr:nth-child(even) {
     background-color: #191d25;
 }
@@ -430,7 +427,6 @@ main {
     margin-top: 26px;
 }
 
-/* Midterm requirement: hover and keyboard focus states. */
 a:hover {
     color: #ffe3a1;
 }
@@ -451,7 +447,6 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
     outline-offset: 4px;
 }
 
-/* Week 4: tablet breakpoint. */
 @media (max-width: 991px) {
     .hero h1 {
         font-size: 3.25rem;
@@ -481,7 +476,6 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
     }
 }
 
-/* Week 4: mobile breakpoint. */
 @media (max-width: 767px) {
     .container {
         padding-left: 22px;
