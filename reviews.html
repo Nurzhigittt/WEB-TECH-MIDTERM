@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="FRAME movie guide: film information, sample ratings, official trailers and short reviews.">
+        <title>
+            Reviews | FRAME
+        </title>
+        <!-- Bootstrap CSS from Week 4. Our own styles load after it. -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Week 3: Flexbox aligns the logo and the navigation. -->
+        <header class="site-header">
+            <div class="container header-content">
+                <a class="brand" href="index.html">
+                    <span class="brand-mark">
+                        F
+                    </span>
+                    FRAME
+                </a>
+                <nav>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="movies.html">
+                                Movies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ratings.html">
+                                Ratings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="trailers.html">
+                                Trailers
+                            </a>
+                        </li>
+                        <li>
+                            <a class="current" href="reviews.html">
+                                Reviews
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <section class="page-intro">
+                <p class="eyebrow">
+                    AFTER THE CREDITS
+                </p>
+                <h1>
+                    Reviews
+                </h1>
+                <p>
+                    A few thoughts on the stories, the atmosphere and what stays with you.
+                </p>
+            </section>
+            <!-- Week 4: Bootstrap columns stack below the large breakpoint. -->
+            <div class="row">
+                <section class="col-12 col-lg-7 reviews-list">
+                    <article class="review-item" id="interstellar-review">
+                        <div class="review-heading">
+                            <h2>
+                                Interstellar
+                            </h2>
+                            <span class="rating-score">
+                                9.0 / 10
+                            </span>
+                        </div>
+                        <p>
+                            The scale of space makes the family story feel even more personal. The music and quiet moments stayed with me long after the ending.
+                        </p>
+                        <span class="muted">
+                            Sample editorial review
+                        </span>
+                    </article>
+                    <article class="review-item" id="inception-review">
+                        <div class="review-heading">
+                            <h2>
+                                Inception
+                            </h2>
+                            <span class="rating-score">
+                                8.8 / 10
+                            </span>
+                        </div>
+                        <p>
+                            The changing dream worlds make every scene worth watching closely. It is a satisfying choice when you want a film to discuss afterwards.
+                        </p>
+                        <span class="muted">
+                            Sample editorial review
+                        </span>
+                    </article>
+                    <article class="review-item" id="dune-review">
+                        <div class="review-heading">
+                            <h2>
+                                Dune
+                            </h2>
+                            <span class="rating-score">
+                                8.3 / 10
+                            </span>
+                        </div>
+                        <p>
+                            The desert landscapes and sound create a powerful atmosphere. The slower pace gives the world room to develop, although this is only the beginning of the story.
+                        </p>
+                        <span class="muted">
+                            Sample editorial review
+                        </span>
+                    </article>
+                </section>
+                <section class="col-12 col-lg-5">
+                    <div class="review-form-box">
+                        <p class="eyebrow">
+                            YOUR POINT OF VIEW
+                        </p>
+                        <h2 id="form-title">
+                            Draft a review
+                        </h2>
+                        <p id="form-note" class="muted">
+                            Practice form: nothing is sent or saved. Copy your text before leaving this page.
+                        </p>
+                        <form id="review-form">
+                            <label for="reviewer">
+                                Your name
+                            </label>
+                            <input type="text" id="reviewer" placeholder="Enter your name">
+                            <label for="movie">
+                                Movie
+                            </label>
+                            <select id="movie">
+                                <option>
+                                    Interstellar
+                                </option>
+                                <option>
+                                    Inception
+                                </option>
+                                <option>
+                                    Dune
+                                </option>
+                            </select>
+                            <label for="score">
+                                Your rating
+                            </label>
+                            <select id="score">
+                                <option value="">
+                                    Choose a score
+                                </option>
+                                <option>
+                                    1 / 10
+                                </option>
+                                <option>
+                                    2 / 10
+                                </option>
+                                <option>
+                                    3 / 10
+                                </option>
+                                <option>
+                                    4 / 10
+                                </option>
+                                <option>
+                                    5 / 10
+                                </option>
+                                <option>
+                                    6 / 10
+                                </option>
+                                <option>
+                                    7 / 10
+                                </option>
+                                <option>
+                                    8 / 10
+                                </option>
+                                <option>
+                                    9 / 10
+                                </option>
+                                <option>
+                                    10 / 10
+                                </option>
+                            </select>
+                            <label for="review">
+                                Your review
+                            </label>
+                            <textarea id="review" rows="5" placeholder="What did you think of the film?"></textarea>
+                            <button type="reset" class="btn btn-outline-light mt-3">
+                                Clear draft
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <div>
+                    <a class="brand footer-brand" href="index.html">
+                        FRAME
+                    </a>
+                    <p class="footer-note">
+                        A small collection of big-screen stories.
+                    </p>
+                    <p class="footer-note">
+                        Demo contact: movieclub@example.com
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <p>
+                        Studio channels
+                    </p>
+                    <a href="https://www.youtube.com/user/WarnerBrosPictures/">
+                        Warner Bros. on YouTube
+                    </a>
+                    <a href="https://www.youtube.com/@paramountpictures">
+                        Paramount on YouTube
+                    </a>
+                </div>
+            </div>
+            <div class="container copyright text-center">
+                © 2026 FRAME · Student movie website. Film artwork belongs to its owners.
+            </div>
+        </footer>
+    </body>
+</html>

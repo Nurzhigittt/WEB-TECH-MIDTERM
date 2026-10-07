@@ -1,0 +1,545 @@
+/* Midterm requirement: CSS variables. This is an agreed addition to the slides. */
+:root {
+    --page-background: #111318;
+    --text-color: #f5f5f2;
+    --accent-color: #f2ca68;
+    --muted-color: #aeb4bf;
+}
+
+/* Week 2: external CSS, basic selectors, text formatting and box model. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--page-background);
+    color: var(--text-color);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+.muted, .director, .movie-meta, .footer-note, .copyright {
+    color: var(--muted-color);
+}
+
+/* Week 3: Flexbox for the header, navigation and small groups of links. */
+.site-header {
+    border-bottom: 1px solid #30343e;
+}
+
+.header-content, .nav-list, .button-row, .section-heading,
+.featured-caption, .movie-meta, .movie-links, .review-heading, .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.header-content {
+    min-height: 96px;
+}
+
+.brand {
+    color: #f5f5f2;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.brand-mark {
+    display: inline-block;
+    background-color: #f2ca68;
+    color: #111318;
+    padding: 0 11px;
+    margin-right: 8px;
+}
+
+.nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    display: inline-block;
+    color: #d1d4dc;
+    text-decoration: none;
+    padding: 12px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-list .current {
+    color: #f2ca68;
+    border-color: #f2ca68;
+}
+
+main {
+    min-height: 65vh;
+}
+
+.hero {
+    padding-top: 56px;
+    padding-bottom: 60px;
+}
+
+.hero-copy {
+    padding-right: 64px;
+}
+
+.eyebrow, .item-number {
+    color: #f2ca68;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 4.25rem;
+    margin: 24px 0;
+}
+
+.hero-description {
+    color: #bac0ca;
+    font-size: 1.125rem;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.button-row {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.btn-warning {
+    background-color: #f2ca68;
+    border-color: #f2ca68;
+    color: #111318;
+}
+
+.text-link {
+    font-weight: bold;
+}
+
+.hero-caption {
+    color: #aeb4bf;
+    margin-top: 58px;
+    font-size: 0.875rem;
+}
+
+/* Week 2: relative parent and absolute label. */
+.featured-poster {
+    position: relative;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-poster img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.poster-label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background-color: #f2ca68;
+    color: #111318;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.featured-caption {
+    max-width: 310px;
+    margin: 16px auto 0;
+    font-size: 0.875rem;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.featured-caption span {
+    display: block;
+}
+
+.home-section {
+    border-top: 1px solid #30343e;
+    padding-top: 35px;
+    margin-top: 12px;
+    margin-bottom: 65px;
+}
+
+.section-heading {
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.section-heading h2 {
+    margin: 0;
+}
+
+/* Week 3: Grid makes three equal columns. */
+.collection-grid, .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.collection-item {
+    border-top: 2px solid #685735;
+    padding-top: 20px;
+}
+
+.collection-item h3 {
+    margin: 12px 0;
+}
+
+.collection-item h3 a {
+    color: #f5f5f2;
+}
+
+.collection-item p {
+    color: #bac0ca;
+}
+
+.page-intro {
+    padding: 52px 0 30px;
+    max-width: 700px;
+}
+
+.page-intro p {
+    color: #bac0ca;
+}
+
+.page-intro .eyebrow {
+    color: #f2ca68;
+}
+
+.movie-grid {
+    margin-bottom: 70px;
+}
+
+.movie-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-meta {
+    margin: 18px 0 10px;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    gap: 12px;
+}
+
+.movie-card h2 {
+    margin-bottom: 10px;
+}
+
+.director {
+    font-size: 0.875rem;
+}
+
+.movie-links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+    font-weight: bold;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    margin: 28px 0 45px;
+}
+
+.ratings-table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+}
+
+.ratings-table th, .ratings-table td {
+    padding: 22px 16px;
+    text-align: left;
+    border-bottom: 1px solid #363b45;
+}
+
+.ratings-table thead {
+    background-color: #242832;
+    color: #bac0ca;
+}
+
+.ratings-table caption {
+    color: #aeb4bf;
+    padding-top: 15px;
+}
+
+/* Midterm requirement: a pseudo-class styles every second table row. */
+.ratings-table tbody tr:nth-child(even) {
+    background-color: #191d25;
+}
+
+.rating-score {
+    color: #f2ca68;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.reading-list {
+    padding-left: 20px;
+}
+
+.reading-list li {
+    margin-bottom: 14px;
+}
+
+.trailer-item {
+    border-top: 1px solid #30343e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.trailer-poster {
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+}
+
+.trailer-copy {
+    padding-left: 36px;
+}
+
+.trailer-copy p {
+    max-width: 650px;
+}
+
+.reviews-list {
+    padding-right: 44px;
+}
+
+.review-item {
+    border-top: 1px solid #30343e;
+    padding: 28px 0;
+}
+
+.review-heading {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.review-heading h2 {
+    margin: 0;
+}
+
+.review-form-box {
+    background-color: #1c2028;
+    padding: 28px;
+    margin-bottom: 60px;
+    border-top: 3px solid #f2ca68;
+}
+
+#review-form label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: bold;
+}
+
+#review-form input, #review-form select, #review-form textarea {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    background-color: #f5f5f2;
+    color: #171a22;
+    border: 1px solid #c9cbd1;
+    border-radius: 3px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.site-footer {
+    border-top: 1px solid #30343e;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 24px;
+}
+
+.footer-content {
+    align-items: flex-start;
+}
+
+.footer-brand {
+    font-size: 1.3rem;
+}
+
+.footer-note {
+    margin: 8px 0;
+    font-size: 0.875rem;
+}
+
+.footer-links p {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 6px;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    margin-top: 26px;
+}
+
+/* Midterm requirement: hover and keyboard focus states. */
+a:hover {
+    color: #ffe3a1;
+}
+
+.nav-list a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-warning:hover {
+    background-color: #ffe3a1;
+    border-color: #ffe3a1;
+    color: #111318;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 4px;
+}
+
+/* Week 4: tablet breakpoint. */
+@media (max-width: 991px) {
+    .hero h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero-copy {
+        padding-right: 25px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 18px;
+        padding-bottom: 16px;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-list {
+        padding-right: 12px;
+    }
+
+    .hero-caption {
+        margin-top: 30px;
+    }
+}
+
+/* Week 4: mobile breakpoint. */
+@media (max-width: 767px) {
+    .container {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    h1, .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .nav-list {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav-list a {
+        font-size: 0.875rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .hero {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .hero-copy {
+        padding-right: 12px;
+        margin-bottom: 24px;
+    }
+
+    .hero h1 {
+        margin-top: 16px;
+    }
+
+    .collection-grid, .movie-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .movie-poster {
+        max-width: 360px;
+    }
+
+    .page-intro {
+        padding-top: 35px;
+    }
+
+    .trailer-copy {
+        padding-left: 12px;
+        margin-top: 22px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .review-form-box {
+        padding: 22px;
+    }
+}
