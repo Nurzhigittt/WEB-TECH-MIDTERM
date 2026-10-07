@@ -16,6 +16,4 @@ Group members and suggested work split:
 
 This work split needs to be confirmed by the group before submission.
 
-Website: [FRAME on GitHub Pages](https://nurzhigittt.github.io/WEB-TECH-MIDTERM/)
-
-To open the project locally, download the files and open `index.html` in a browser.
+Website: https://nurzhigittt.github.io/WEB-TECH-MIDTERM/
