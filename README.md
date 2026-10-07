@@ -8,7 +8,7 @@ The website has movie posters and descriptions, a ratings table, links to offici
 
 Technologies: HTML, CSS and Bootstrap 5.3.3. Flexbox, Grid and media queries are used for the layout. The Roboto font is connected through Google Fonts.
 
-Group members and suggested work split:
+Group members:
 
 - Duiset Nurzhigit — Home and Movies pages, navigation menu.
 - Seitkapar Magzhan — Ratings and Trailers pages, ratings table.
