@@ -14,7 +14,7 @@ FRAME is a responsive, five-page movie website featuring Interstellar, Inception
 
 ## Open the project
 
-Extract the ZIP and open `index.html` in a browser. The CSS, Bootstrap, fonts and posters are stored locally. Internet access is needed only for the external trailer and studio links.
+Extract the ZIP and open `index.html` in a browser. The CSS, Bootstrap and posters are stored locally. Internet access is needed for the Google Font and the external trailer and studio links. If Roboto does not load, the site uses Arial.
 
 ## Pages and features
 
@@ -33,9 +33,9 @@ Every page contains a semantic header, navigation, main area and footer. Navigat
 - **Week 2:** external CSS, element/class/ID/descendant selectors, colours, typography, box model, relative and absolute positioning.
 - **Week 3:** Flexbox for the header and navigation; CSS Grid for film cards.
 - **Week 4:** Bootstrap containers, rows, responsive columns, buttons and spacing utilities; media queries at 991px and 767px.
-- **Additional mandatory rubric items, approved for this project:** four CSS variables in `:root`, `:hover`, `:focus`, `:nth-child(even)`, a locally hosted Google Font and `loading="lazy"` on images below the initial view.
+- **Additional mandatory rubric items, approved for this project:** four CSS variables in `:root`, `:hover`, `:focus`, `:nth-child(even)`, Roboto loaded through a Google Fonts stylesheet link and `loading="lazy"` on images below the initial view.
 
-The project's own styles are in `css/style.css`. `css/fonts.css` contains the Google Fonts font declarations. `css/bootstrap.min.css` is the unmodified third-party Bootstrap library from the version shown in Week 4. Its internal implementation is not student-authored code.
+The project's own styles are in `css/style.css`. Each HTML page connects Google Fonts with one `<link>` in its `<head>`. `css/bootstrap.min.css` is the unmodified third-party Bootstrap library from the version shown in Week 4. Its internal implementation is not student-authored code.
 
 ## Proposed individual contributions
 
@@ -66,4 +66,4 @@ The site is published from the `main` branch and the repository root. No build c
 
 ## Sources and licences
 
-Film information, image sources and official video links are listed in `SOURCES.txt`. Film artwork remains the property of the relevant studios and is included for this educational project. Bootstrap uses the MIT licence. Roboto uses the SIL Open Font License; its licence is included in `fonts/OFL.txt`.
+Film information, image sources and official video links are listed in `SOURCES.txt`. Film artwork remains the property of the relevant studios and is included for this educational project. Bootstrap uses the MIT licence. Roboto is loaded directly from Google Fonts. No font files are included in this repository.
