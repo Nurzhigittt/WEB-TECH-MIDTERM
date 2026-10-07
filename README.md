@@ -14,6 +14,6 @@ Group members:
 - Seitkapar Magzhan — Ratings and Trailers pages, ratings table.
 - Korganbek Madiyar — Reviews page, form and responsive styles.
 
-This work split needs to be confirmed by the group before submission.
+
 
 Website: https://nurzhigittt.github.io/WEB-TECH-MIDTERM/
